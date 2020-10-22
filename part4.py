@@ -8,7 +8,7 @@ def optimizer():
     ca1 = eval(input("Enter the price of one cup of coffee at A1: "))
     la2 = eval(input("Enter the location of A2: "))
     ca2 = eval(input("Enter the price of one cup of coffee at A2: "))
-    trials = 1000000
+    trials = 100000
 
     profitA1, profitA2 = cafeshop(trials, la1, ca1, la2, ca2)
     beginningProfit = profitA1 + profitA2
