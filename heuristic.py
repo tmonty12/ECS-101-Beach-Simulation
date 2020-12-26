@@ -1,5 +1,5 @@
 import random
-from part3 import cafeshop
+from simulator import beach_simulation
 
 def optimizer():
     # Has the user input costs and locations for A1 and A2 (should not really matter in the end)
@@ -11,7 +11,7 @@ def optimizer():
     trials = 100000
 
     # Calculate the beginning profit using the program from part 3
-    profitA1, profitA2 = cafeshop(trials, la1, ca1, la2, ca2)
+    profitA1, profitA2 = beach_simulation(trials, la1, ca1, la2, ca2)
     beginningProfit = profitA1 + profitA2
     print('\nYour beginning average profit per person for A1 and A2 is: $' + str(round(beginningProfit/trials,2)) +'\n')
 
@@ -34,7 +34,7 @@ def optimizer():
     for x in costSteps:
         for y in costSteps:
             # Calculate the profit of costs x = ca1 and y = ca2
-            profitA1, profitA2 = cafeshop(trials, la1, x, la2, y)
+            profitA1, profitA2 = beach_simulation(trials, la1, x, la2, y)
             currentTotalProfit = profitA1 + profitA2
             # Determine if the current cost combination yields a greater profit
             if(currentTotalProfit > totalProfit):
@@ -50,7 +50,7 @@ def optimizer():
     # Same logic as with the previous double loop except now we are optimizing the locations of A1 and A2
     for i in locationSteps:
         for j in locationSteps:
-            profitA1, profitA2 = cafeshop(trials, i, ca1, j, ca2)
+            profitA1, profitA2 = beach_simulation(trials, i, ca1, j, ca2)
             currentTotalProfit = profitA1 + profitA2
             if(currentTotalProfit > totalProfit):
                 totalProfit = currentTotalProfit

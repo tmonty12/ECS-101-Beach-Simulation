@@ -1,7 +1,7 @@
 import random
 import time
 
-def cafeshop(T, LA1, CA1, LA2, CA2):
+def beach_simulation(T, LA1, CA1, LA2, CA2):
     i = 0 
     profitA1=0
     profitA2=0
