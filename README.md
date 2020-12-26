@@ -1,7 +1,7 @@
 # ECS-101-Beach-Simulation
 Read the Problem Description pdf to become familiarized with the problem.
 
-The simulation program simulates the average profit of two coffee stands based on cost and location and the heuristic program finds a near optimal location and price for two stands to create the greatest profit per persion.
+The simulation program simulates the average profit of two coffee stands based on cost and location and the heuristic program finds a near optimal location and price for two stands to create the greatest profit per person.
 
 To run the simulation program for all you have to do is run the module and you will be asked by the console to input the cost and locations for A1 and A2.
 
